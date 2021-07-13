@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo1"></div>
+    <style id="demo2"></style>
+    <div id="button">
+        <button id="btnPause">暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnNormal">中速</button>
+        <button id="btnFast">快速</button>
+    </div>
+    <div id="html">
+        <div class="skin">
+            <div class="head"></div>
+            <div class="face"></div>
+            <div class="eyes left"></div>
+            <div class="eyes right"></div>
+            <div class="eyesBlack left"></div>
+            <div class="eyesBlack right"></div>
+            <div class="nose">
+                <div class="white"></div>
+                <div class="line"></div>
+            </div>
+            <div class="mustache_left">
+                <span class="mustache"></span>
+                <span class="mustache"></span>
+                <span class="mustache"></span>
+            </div>
+            <div class="mustache_right">
+                <span class="mustache"></span>
+                <span class="mustache"></span>
+                <span class="mustache"></span>
+            </div>
+            <div class="mouse">
+
+            </div>
+            <div class="neck">
+                <div class="ball">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="hole"></div>
+                    <div class="vertical"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <style>
+        * {box-sizing: border-box;margin:0;padding:0;}
+        *::before, *::after {box-sizing: border-box;}
+        #button{
+            position:fixed;
+            right:0;
+            top:0;
+            display: flex;
+            flex-direction: column;
+            margin-top:10px;
+            margin-right:10px;
+        }
+        #button>button{
+            font-size:1em;
+            padding:8px 16px ;
+            margin-bottom: 12px;
+            border:none;
+            white-space: nowrap;
+            border-radius: 15px;
+            background: #ffff00;
+        }
+        #demo2{
+            display:none;
+        }
+        #demo1{
+            position:fixed;
+            height:100%;
+            width:100vh;
+            left:0;
+            overflow:auto;
+            background:yellow;
+        }
+        #demo1::-webkit-scrollbar{
+            display: none;
+        }
+
+        #html {
+            position: fixed;
+            top:0%;
+            right:20%;
+            width: 50vh;
+            height: 100%;
+        }
+        
+    </style>
+    <script src="test.js"></script>
+</body>
+
+</html>
